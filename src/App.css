@@ -85,6 +85,33 @@ body{
   margin: 20px;
   padding: 50px;
   
+}
 
+.section_2{
+  background-color: lightcyan;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   
+}
+
+.perso_section2{
+  background-color: gray;
+  margin: 20px;
+  width: 30%;
+  height: 50%;
+  display: flex;
+  align-self: center;
+
+
+
+}
+
+.text_section2{
+  background-color: gray;
+  text-align: center;
+
+
+
 }
