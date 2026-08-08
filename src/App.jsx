@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Nav from './nav.jsx';
 import Hero from './hero.jsx';
 import './App.css';
@@ -7,8 +7,7 @@ import Section2 from './section2.jsx'
 import gsap from 'gsap';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
     <>
       <Nav/>
