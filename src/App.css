@@ -2,15 +2,25 @@ html{
   background-color: gray;
 }
 
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
 .nav_bar{
-  background-color: red;
+  background-color: rgb(255, 183, 183);
   color: white;
+  border: solid royalblue 1px;
+  border-radius: 1px;
   padding: 10px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   opacity: 50%;
   flex: right;
+  
 }
 
 .nav_bar a:focus{

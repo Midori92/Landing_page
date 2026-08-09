@@ -37,7 +37,7 @@ function Section_2(){
       scrollTrigger: {
         trigger: section2Ref.current,
         start: "top 80%",
-        end: "bottom bottom",
+        end: "top 20%",
         scrub: true,
         markers: true
       }
@@ -50,8 +50,8 @@ function Section_2(){
 
     scrollTrigger: {
         trigger: section2Ref.current,
-        start: "top center",
-        end: "bottom bottom",
+        start: "top 80%",
+        end: "top 20%",
         scrub: true,
         
     },
