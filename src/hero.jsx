@@ -1,8 +1,13 @@
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
 
+gsap.registerPlugin(SplitText) 
 gsap.registerPlugin(ScrollTrigger);
+
+
+
 
 function Hero() {
 
@@ -10,11 +15,18 @@ const heroRef = useRef(null);
 
   useLayoutEffect(() => {
 
-    gsap.to(heroRef.current, {
-      x: 200,
-      duration: 3,
+    let split = SplitText.create(heroRef.current,{
+        type: "chars"
+    });
 
-      backgroundColor:'blue',
+    gsap.to(split.chars, {
+        y: -400,
+        
+    
+      stagger: {
+        amount: 0.5,
+        from: "random"
+      },
 
       scrollTrigger: {
         trigger: heroRef.current,
@@ -22,6 +34,7 @@ const heroRef = useRef(null);
         end: "bottom top",
         scrub: true,
       }
+
     });
 
   }, []);
