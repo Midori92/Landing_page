@@ -18,10 +18,7 @@ function Scene(){
       intensity={10}
     />
 
-      <mesh>
-  <boxGeometry args={[1, 1, 1]} />
-  <meshStandardMaterial color="red" />
-</mesh>
+     <Element/>
     </Canvas>
 
     )

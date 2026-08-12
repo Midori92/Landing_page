@@ -6,6 +6,7 @@ import { useGLTF } from "@react-three/drei";
 function Element() {
 
   const {scene} = useGLTF("/Shuriken-modele.glb") 
+  
   return (
     <primitive
     object = {scene}
