@@ -79,7 +79,7 @@ function Section_1() {
   }, []);
 
   return (
-    <div ref={section1Ref} className="section">
+    <div ref={section1Ref} id="section1" className="section">
 
       <div className="content_perso">
         <p>PERSO</p>

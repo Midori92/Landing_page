@@ -1,16 +1,46 @@
 import {Canvas } from "@react-three/fiber";
 import Element from "./element.jsx";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useThree } from "@react-three/fiber";
 
-gsap.registerPlugin(ScrollTrigger);
+import gsap from "gsap";
+import { useRef, useEffect } from "react";
+
+function CameraAnimation(){
+    const {camera} = useThree();
+  
+
+    useEffect(() =>{
+        const animation = 
+        gsap.to(camera.rotation,{
+            z: Math.PI * 1/4,
+            x: Math.PI * 1/4,
+            duration: 2,
+        });
+
+        return() => {
+            animation.kill();
+        }
+
+        },[camera]
+    );
+
+    return null;
+}
 
 function Scene(){
     
 
+
     return(
 
-     <div className="sene">  <Canvas>
+     <div className="scene">  
+     
+     <Canvas
+     
+     camera={{
+        position: [0,3,5],
+        fov: 50
+     }}>
       <ambientLight intensity={0.15} />
 
       <directionalLight
@@ -24,6 +54,7 @@ function Scene(){
     />
 
      <Element/>
+     
     </Canvas> 
     </div> 
 

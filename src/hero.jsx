@@ -42,11 +42,11 @@ const heroRef = useRef(null);
 
     return(
         <>
-        <div className="hero">
+        <div className="hero" id="hero" >
 
             <div className="title"><h1> THE LAST SHINOBI</h1></div>
 
-            <div className="body">
+            <div className="body" >
                 <div className="content">
                     <p> IMAGE</p>
 
