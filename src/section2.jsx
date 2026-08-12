@@ -46,7 +46,7 @@ function Section_2(){
         
     gsap.to(section2Ref.current,{
         
-    backgroundColor: "lightblue",
+    
 
     scrollTrigger: {
         trigger: section2Ref.current,
@@ -63,12 +63,12 @@ function Section_2(){
         <>
         <div ref={section2Ref} className="section_2">
             <div className="text_section2">
-                <p ref={text2Ref}>Text </p>
+                <p ref={text2Ref}>　ARE YOU READY ?</p>
 
             </div>
             
             <div className="perso_section2">
-                <p>Personnage marche</p>
+                
 
             </div>
 

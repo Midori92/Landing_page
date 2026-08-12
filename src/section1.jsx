@@ -60,7 +60,7 @@ function Section_1() {
 
     gsap.to(section1Ref.current, {
 
-      backgroundColor: "pink",
+     
 
       scrollTrigger: {
         trigger: section1Ref.current,
@@ -82,12 +82,12 @@ function Section_1() {
     <div ref={section1Ref} id="section1" className="section">
 
       <div className="content_perso">
-        <p>PERSO</p>
+       
       </div>
 
       <div className="content_txt">
         <p ref={textRef}>
-          blablablabla
+          FAILING IS THE ONLY WAY TO WIN
         </p>
       </div>
 

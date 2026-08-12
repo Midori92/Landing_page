@@ -48,13 +48,13 @@ const heroRef = useRef(null);
 
             <div className="body" >
                 <div className="content">
-                    <p> IMAGE</p>
+                  
 
 
                 </div>
 
                 <div ref={heroRef} className="text-hero">
-                    <p> TEXT TEXT</p>
+                    <p> THE NEW HERO IS BORN</p>
                 </div>
             </div>
         </div>

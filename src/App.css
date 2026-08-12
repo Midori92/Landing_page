@@ -1,6 +1,12 @@
 html{
-  background-color: gray;
+  background-color: #63251A;
+  
 }
+
+p{
+  font-size: 3rem;
+}
+
 
 nav{
   position: sticky;
@@ -10,25 +16,27 @@ nav{
 }
 
 .nav_bar{
-  background-color: rgb(255, 183, 183);
+  background-color: black;
   color: white;
-  border: solid royalblue 1px;
+  border: solid red 1px;
   border-radius: 1px;
   padding: 10px;
+  width: 100vw;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   opacity: 50%;
   flex: right;
+  margin: 0;
   
 }
 
 .nav_bar a:focus{
-  color: black;
+  color: red;
 }
 
 .nav_bar a:hover{
-  color: orange;
+  color: white;
 
 }
 
@@ -41,7 +49,7 @@ nav{
 
 .title{
   text-align: center;
-  padding-top: 20px;
+
   
 }
 
@@ -65,8 +73,7 @@ nav{
 
 .text-hero{
   text-align: center;
-  padding: 30px;
-  background-color: green;
+  font-size: 3rem;
 }
 
 .section{
@@ -78,7 +85,7 @@ nav{
 
 .content_perso{
 
-  background-color: yellow;
+
   margin: 20px;
   padding: 50px;
   width: 45%;
@@ -88,7 +95,7 @@ nav{
 
 .content_txt{
 
-  background-color: yellow;
+  
   margin: 20px;
   padding: 50px;
   
@@ -104,7 +111,7 @@ nav{
 }
 
 .perso_section2{
-  background-color: yellow;
+
   margin: 20px;
   width: 30%;
   height: 50%;
@@ -116,7 +123,7 @@ nav{
 }
 
 .text_section2{
-  background-color: yellow;
+  
   text-align: center;
   margin: 10px;
   
