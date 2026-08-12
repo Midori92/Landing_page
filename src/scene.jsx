@@ -1,11 +1,16 @@
 import {Canvas } from "@react-three/fiber";
 import Element from "./element.jsx";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Scene(){
+    
 
     return(
 
-        <Canvas>
+     <div className="sene">  <Canvas>
       <ambientLight intensity={0.15} />
 
       <directionalLight
@@ -19,7 +24,8 @@ function Scene(){
     />
 
      <Element/>
-    </Canvas>
+    </Canvas> 
+    </div> 
 
     )
 }

@@ -18,9 +18,12 @@ function App() {
 <>
 
     <Nav/>
+    <main>
     <Hero/>
     <Section1/>
     <Section2/>
+    </main>
+    
     <Scene/>
   
 
