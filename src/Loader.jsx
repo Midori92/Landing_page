@@ -3,14 +3,14 @@ import gsap from "gsap";
 
 function Loader({ onComplete}){
 
-    const[progess, setProgess] = useState(0);
+    const[progress, setProgress] = useState(0);
 
     useEffect(() => {
 
         let value = 0;
         const interval = setInterval(() =>
         {value += 1;
-        setProgess(value);
+        setProgress(value);
 
          if (value >= 100){
 
@@ -42,13 +42,13 @@ function Loader({ onComplete}){
                     SHINOBI
                 </p>
 
-                <p className="loader_progress"> {progess}% </p>
+                <p className="loader_progress"> {progress}% </p>
 
                 <div className="loader_bar">
 
                     <div className="loader_bar_progress" 
                     style = {{
-                        width: `${progess}%`
+                        width: `${progress}%`
                     }}/>
 
 

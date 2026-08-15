@@ -38,24 +38,3 @@ function App() {
 }
 
 export default App
-/*
-/// let value = 0;
-        const interval = setInterval(() =>
-        {value += 1;
-        setProgess(value);
-
-         if (value >= 100){
-
-            clearInterval(interval);
-
-            gsap.to(".loader",{
-                opacity: 0,
-                duration: 1,
-                delay: 0.3,
-                onComplete
-            });
-         }
-        
-    }, 20);
-
-    return () => clearInterval(interval);*/
