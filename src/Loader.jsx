@@ -1,0 +1,70 @@
+import { useEffect, useState } from "react";
+import gsap from "gsap";
+
+function Loader({ onComplete}){
+
+    const[progess, setProgess] = useState(0);
+
+    useEffect(() => {
+
+        let value = 0;
+        const interval = setInterval(() =>
+        {value += 1;
+        setProgess(value);
+
+         if (value >= 100){
+
+            clearInterval(interval);
+
+            gsap.to(".loader",{
+                opacity: 0,
+                duration: 1,
+                delay: 0.3,
+                onComplete
+            });
+         }
+        
+    }, 20);
+
+    return () => clearInterval(interval);
+       
+
+    }, [onComplete]);
+
+
+    return(
+        <>
+
+        <div className="loader">
+            <div className="loader_content">
+
+                <p className="loader_title">
+                    SHINOBI
+                </p>
+
+                <p className="loader_progress"> {progess}% </p>
+
+                <div className="loader_bar">
+
+                    <div className="loader_bar_progress" 
+                    style = {{
+                        width: `${progess}%`
+                    }}/>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+        
+        </>
+    )
+    
+   
+
+}
+
+export default Loader
