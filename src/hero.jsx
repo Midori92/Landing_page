@@ -2,6 +2,7 @@ import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import Element from "./element";
 
 gsap.registerPlugin(SplitText) 
 gsap.registerPlugin(ScrollTrigger);
@@ -42,21 +43,26 @@ const heroRef = useRef(null);
 
     return(
         <>
-        <div className="hero" id="hero" >
+        <div className="hero_section" id="hero" >
 
-            <div className="title"><h1> THE LAST SHINOBI</h1></div>
+            <div className="hero_title"><h1> THE LAST SHINOBI</h1></div>
 
-            <div className="body" >
-                <div className="content">
+                <div className="hero_content">
                   
-
+                    <Element/>
 
                 </div>
 
-                <div ref={heroRef} className="text-hero">
+                <div ref={heroRef} className="hero_text">
                     <p> THE NEW HERO IS BORN</p>
                 </div>
-            </div>
+
+
+                <div className="hero_instruc1"
+                >
+                  <p> ↓ Scroll to discover ↓</p>
+                </div>
+        
         </div>
         
         </>
