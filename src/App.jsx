@@ -21,7 +21,7 @@ function App() {
     
 <>
     {loading && ( <Loader onComplete = {() => setLoading(false)}/>)}
-    <Nav/>
+
     <main>
     <Hero/>
     <Section1/>

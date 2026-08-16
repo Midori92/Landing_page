@@ -17,16 +17,6 @@ const heroRef = useRef(null);
   useLayoutEffect(() => {
 
 
-    <nav className="nav_section">
-            <div className="nav_text1">
-                <p> text 1</p>
-            </div>
-
-            <div className="nav_text2">
-                <p> text 2</p>
-            </div>
-        </nav>
-
     let split = SplitText.create(heroRef.current,{
         type: "chars"
     });
@@ -54,6 +44,19 @@ const heroRef = useRef(null);
 
     return(
         <>
+
+
+          <nav className="nav_section">
+            <div className="nav_text1">
+                <p> text 1</p>
+            </div>
+
+            <div className="nav_text2">
+                <p> text 2</p>
+            </div>
+        </nav>
+
+        
         <div className="hero_section" id="hero" >
 
             <div className="hero_title"><h1> THE LAST SHINOBI</h1></div>
