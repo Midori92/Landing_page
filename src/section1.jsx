@@ -2,6 +2,7 @@ import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import Element from "./element";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -79,13 +80,20 @@ function Section_1() {
   }, []);
 
   return (
-    <div ref={section1Ref} id="section1" className="section">
+    <div ref={section1Ref} id="section1" className="section1">
 
-      <div className="content_perso">
+      <div className="section1_element">
+        <Element/>
        
       </div>
 
-      <div className="content_txt">
+      <div className="section1_title">
+        <h2> TITRE SECTION 1</h2>
+
+
+      </div>
+
+      <div className="section1_text">
         <p ref={textRef}>
           FAILING IS THE ONLY WAY TO WIN
         </p>

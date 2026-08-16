@@ -88,28 +88,35 @@ nav{
   grid-row: 11/12;
 }
 
-.section{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.section1{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(12, 1fr);
   height: 100vh;
 }
 
-.content_perso{
+.section1_element{
 
 
-  margin: 20px;
-  padding: 50px;
-  width: 45%;
-
+  grid-column: 1/10;
+  grid-row: 3/10;
+  align-items: center;
 
 }
 
-.content_txt{
+.section1_title{
+
+  grid-column: 9/12;
+  grid-row: 2/5;
+}
+
+.section1_text{
 
   
-  margin: 20px;
-  padding: 50px;
+  grid-column: 8/12;
+  grid-row: 9/10;
+  align-content: center;
+
   
 }
 
