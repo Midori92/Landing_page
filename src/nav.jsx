@@ -4,11 +4,13 @@ function Nav(){
 
     return(
 
-        <nav>
-            <div className="nav_bar">
-                <a href ="#">TEXT 1</a> 
-                <a href ="#">TEXT 2</a> 
-                <a href ="#">TEXT 3</a> 
+        <nav className="nav_section">
+            <div className="nav_text1">
+                <p> text 1</p>
+            </div>
+
+            <div className="nav_text2">
+                <p> text 2</p>
             </div>
         </nav>
 
