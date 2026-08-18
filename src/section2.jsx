@@ -62,12 +62,12 @@ function Section_2(){
     return(
         <>
         <div ref={section2Ref} className="section_2">
-            <div className="text_section2">
-                <p ref={text2Ref}>　ARE YOU READY ?</p>
+            <div className="section_2_text">
+                <h2 ref={text2Ref}>　ARE YOU READY ?</h2>
 
             </div>
             
-            <div className="perso_section2">
+            <div className="section_2_element">
                 
 
             </div>

@@ -122,29 +122,29 @@ nav{
 
 .section_2{
 
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(12, 1fr);
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   
 }
 
-.perso_section2{
+.section_2_element{
 
-  margin: 20px;
-  width: 30%;
-  height: 50%;
-  display: flex;
-  align-self: center;
+  grid-column: 5/10;
+  grid-row: 10/11;
+  align-items: center;
+
 
 
 
 }
 
-.text_section2{
+.section_2_text{
   
-  text-align: center;
-  margin: 10px;
+  grid-column: 6/11;
+  grid-row: 11/12;
+  align-items: center;
   
 }
 
