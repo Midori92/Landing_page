@@ -114,8 +114,8 @@ nav{
 
   
   grid-column: 8/12;
-  grid-row: 9/10;
-  align-content: center;
+  grid-row: 3/10;
+
 
   
 }
@@ -133,7 +133,7 @@ nav{
 
   grid-column: 5/10;
   grid-row: 10/11;
-  align-items: center;
+
 
 
 
@@ -142,9 +142,9 @@ nav{
 
 .section_2_text{
   
-  grid-column: 6/11;
-  grid-row: 11/12;
-  align-items: center;
+  grid-column: 5/11;
+  grid-row: 3/5;
+
   
 }
 
