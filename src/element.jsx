@@ -1,89 +1,100 @@
 import { useGLTF } from "@react-three/drei";
 import { useEffect } from "react";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 function Element() {
 
   const { scene } = useGLTF("/Shuriken-modele.glb");
 
+
   useEffect(() => {
 
-    const rotation = gsap.to(scene.rotation, {
-      y: "+=" + Math.PI * 2,
-
-      duration: 8,
-
-      repeat: -1,
-
-      ease: "none",
-    });
+    const ctx = gsap.context(() => {
 
 
+      // ==========================
+      // ROTATION PERMANENTE
+      // ==========================
 
-    const section1Position = gsap.to(scene.position, {
+      gsap.to(scene.rotation, {
 
-      x: -1,
-      y: 0,
+        y: "+=" + Math.PI * 2,
 
-      scrollTrigger: {
-        trigger: "#section1",
+        duration: 8,
 
-        start: "top center",
-        end: "bottom center",
+        repeat: -1,
 
-        scrub: 1,
-      },
+        ease: "none",
 
-    });
-
-
-
-    const section2Position = gsap.to(scene.position, {
-
-      x: 0,
-      y: -1.5,
-
-      scrollTrigger: {
-        trigger: "#section2",
-
-        start: "top center",
-        end: "bottom center",
-
-        scrub: 1,
-      },
-
-    });
-
-
-
-    return () => {
-
-      rotation.kill();
-
-      section1Position.kill();
-
-      section2Position.kill();
-
-      ScrollTrigger.getAll().forEach(trigger => {
-        trigger.kill();
       });
 
-    };
+
+      // ==========================
+      // MOUVEMENT AVEC LE SCROLL
+      // ==========================
+
+      const tl = gsap.timeline({
+
+        scrollTrigger: {
+
+          trigger: "#hero",
+
+          start: "top top",
+
+          end: "bottom+=200% top",
+
+          scrub: 1,
+
+        }
+
+      });
+
+
+      tl.to(scene.position, {
+
+        x: -2,
+
+        y: 0,
+
+      });
+
+
+      tl.to(scene.position, {
+
+        x: 1,
+
+        y: -1.5,
+
+      });
+
+
+    });
+
+
+    return () => ctx.revert();
+
 
   }, [scene]);
 
 
   return (
+
     <primitive
+
       object={scene}
+
       scale={1}
-      position={[0, 0, 0]}
-      rotation={[0, 0, 0]}
+
     />
+
   );
+
 }
+
 
 export default Element;
