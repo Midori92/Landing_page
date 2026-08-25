@@ -19,7 +19,7 @@ function App() {
   return (
 
     
-<>
+<html>
     {loading && ( <Loader onComplete = {() => setLoading(false)}/>)}
 
     <main>
@@ -33,7 +33,7 @@ function App() {
 
    
     
-</>
+</html>
   )
 }
 
