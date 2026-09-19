@@ -21,7 +21,7 @@ The goal was to create a visually engaging page with a strong and consistent the
 * **JavaScript**
 * **GSAP**
 * **CSS**
-* **3D / WebGL**
+* **3D 
 
 ## 🎭 3D Asset
 
@@ -44,6 +44,3 @@ I wanted to focus on creating a cohesive visual identity and exploring how anima
 * **Live Demo:** [[The Shinobi page](https://landing-page-psi-nine-28.vercel.app/)]
 * **Repository:** [GitHub](#)
 
----
-
-Made with 🥷 and ☕
