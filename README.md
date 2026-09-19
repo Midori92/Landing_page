@@ -41,7 +41,7 @@ I wanted to focus on creating a cohesive visual identity and exploring how anima
 
 ## 🔗 Links
 
-* **Live Demo:** [The Shinobi page](#https://landing-page-psi-nine-28.vercel.app/)
+* **Live Demo:** [[The Shinobi page](https://landing-page-psi-nine-28.vercel.app/)]
 * **Repository:** [GitHub](#)
 
 ---
