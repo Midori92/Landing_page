@@ -68,7 +68,7 @@ const heroRef = useRef(null);
                 </div>
 
                 <div ref={heroRef} className="hero_text">
-                    <p> THE NEW HERO IS BORN</p>
+                    <p> THE NEW HERO WAS BORN</p>
                 </div>
 
 
