@@ -33,7 +33,7 @@ function Section_1() {
         start: "top center",
         end: "bottom bottom",
         scrub: true,
-        markers: true
+       
       }
 
     });
@@ -68,7 +68,7 @@ function Section_1() {
         start: "top 80%",
         end: "bottom bottom",
         scrub: true,
-        markers: true
+       
       }
 
     });
@@ -88,7 +88,7 @@ function Section_1() {
       </div>
 
       <div className="section1_title">
-        <h2> TITRE SECTION 1</h2>
+        <h2> THE STORY</h2>
 
 
       </div>

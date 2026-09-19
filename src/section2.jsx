@@ -39,7 +39,7 @@ function Section_2(){
         start: "top 80%",
         end: "top 20%",
         scrub: true,
-        markers: true
+   
       }
 
     });
